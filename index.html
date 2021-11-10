@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+   <html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="css/styles.css">
+   </head>
+   <body>
+
+      <form id="register" action="">
+
+         
+         <div class="tab">
+            <h1>Información de Contacto:</h1>
+
+            <p><input placeholder="Nombre" oninput="this.className = ''"></p>
+            <p><input placeholder="Apellido Paterno" oninput="this.className = ''"></p>
+            <p><input placeholder="Apellido Materno" oninput="this.className = ''"></p>
+            <p><input placeholder="Dirección" oninput="this.className = ''"></p>
+            <p><input placeholder="Código Postal" oninput="this.className = ''"></p>
+            <p><input placeholder="Número Telefónico" oninput="this.className = ''"></p>
+            <p><input placeholder="Correo Electrónico" oninput="this.className = ''"></p>
+         </div>
+                  
+         <div class="tab">
+            <h1>Especificaciones de la propiedad:</h1>
+
+            <label for="type_property">Tipo de Propiedad</label>
+            <select name="type_property" id="">
+               <option value="home">Casa</option>
+               <option value="department">Departamento</option>
+            </select>
+
+            <p><input placeholder="Antigüedad" oninput="this.className = ''"></p>
+
+            <p>Cuenta con:</p>
+            <p>
+               <input type="checkbox" id="elevator" >
+               <label for="elevator">Elevador</label>
+            </p>
+            <p>
+               <input type="checkbox" id="gym" >
+               <label for="gym">Gym</label>
+            </p>
+            <p>
+               <input type="checkbox" id="swimming pool" >
+               <label for="swimming pool">Alberca</label>
+            </p>
+            <p>
+               <input type="checkbox" id="garden" >
+               <label for="garden">Jardin</label>
+            </p>
+
+            <p><input placeholder="Tamaño del inmueble (m2)" oninput="this.className = ''"></p>
+
+         </div>
+         
+         <div class="tab">
+            <h1>Detalles de la propeidad:</h1>
+
+            <p><input type="number" placeholder="Recamaras" oninput="this.className = ''"></p>
+            <p><input type="number" placeholder="Baños" oninput="this.className = ''"></p>
+            <p><input type="number" placeholder="Estacionamiento" oninput="this.className = ''"></p>
+         </div>
+
+         <div class="tab">
+            <h1>Fotos de la propiedad:</h1>
+
+            <p><input type="file" name="image_property"></p>
+         </div>
+         
+         <div class="container-btns">
+            <div class="btns">
+               <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+               <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+         </div>
+         
+         <div class ="circles">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+         </div>
+         
+      </form>
+
+      <script src="./js/index.js"></script>
+   </body>
+</html>
