@@ -64,7 +64,7 @@ label
 {
    display: block;
    text-align: initial;
-   margin-bottom: 5px;
+   margin-bottom: 10px;
 }
 
 .check > p 
@@ -83,12 +83,6 @@ label
 .check label 
 {
    margin-left: 10px
-}
-
-.check img 
-{
-   margin-left: 15px;
-   width: 20px;
 }
 
 .photo 
