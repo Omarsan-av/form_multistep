@@ -22,6 +22,7 @@ body
    padding: 20px 30px 20px;
    margin: 0 0 25px;
    height: auto;
+   min-height: 85%;
    width: 85%;
    min-width: 300px;
    border-radius: 20px;
@@ -38,6 +39,26 @@ h1
 p 
 {
    margin: 16px 0;
+}
+
+select
+{
+   height: 42px;
+   width: 98%;
+   box-sizing: content-box;
+   font-size: 16px;
+}
+
+label 
+{
+   display: block;
+   text-align: initial;
+   margin-bottom: 10px;
+}
+
+.home 
+{
+   height: 40px;
 }
 
 input 
