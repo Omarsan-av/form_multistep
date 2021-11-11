@@ -29,11 +29,11 @@ body
 
 .fields
 {
-   border: 2px solid #c3c3c3;
+   /* border: 2px solid #c3c3c3; */
    border-radius: 20px;
    padding: 20px 30px 20px;
    margin-top: 20px;
-   /* background: rgb(255 255 255 / 62%); */
+   background: rgb(255 255 255 / 60%);
 }
 
 h1 
