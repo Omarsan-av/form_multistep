@@ -11,6 +11,7 @@ function showTab(n)
    if (n == 0) 
    {
       document.getElementById("prevBtn").style.display = "none";
+      title.innerHTML = "INformación de Contacto";
    } 
    else 
    {

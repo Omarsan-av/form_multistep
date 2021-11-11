@@ -22,7 +22,7 @@ body
    padding: 20px 30px 20px;
    margin: 0 0 25px;
    height: auto;
-   min-height: 85%;
+   min-height: 85vh;
    width: 85%;
    min-width: 300px;
    border-radius: 20px;
@@ -86,11 +86,6 @@ input.invalid
    display: flex;
    justify-content: center;
    margin-top: 30px;
-}
-
-.btns 
-{
-   /* float:right; */
 }
 
 button 
