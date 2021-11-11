@@ -33,7 +33,7 @@ body
 
 p, label, select, input, button
 {
-   font-size: 20rem;
+   font-size: 18rem;
    font-family: 'Roboto', sans-serif;
 }
 
@@ -86,7 +86,7 @@ label
 {
    display: block;
    text-align: initial;
-   margin-bottom: 10px;
+   margin-bottom: 8px;
 }
 
 .check > p 
