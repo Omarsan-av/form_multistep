@@ -13,14 +13,15 @@ body
    height: 100%;
    display: grid;
    place-items: center;
+   font-family: 'Roboto', sans-serif;
 }
 
-/* Style the form */
 #register
 {
    background-color: #ffffff;
-   padding: 40px;
-   height: 85%;
+   padding: 30px 30px 20px;
+   margin: 25px 0;
+   height: auto;
    width: 85%;
    min-width: 300px;
    border-radius: 20px;
@@ -29,9 +30,14 @@ body
 h1 
 {
    text-align: center;  
+   font-size: 21px;
 }
 
-/* Style the input fields */
+p 
+{
+   margin: 16px 0;
+}
+
 input 
 {
    padding: 10px;
@@ -41,13 +47,11 @@ input
    border: 1px solid #aaaaaa;
 }
 
- /* Mark input boxes that gets an error on validation: */
 input.invalid 
 {
    background-color: #ffdddd;
 }
 
- /* Hide all steps by default: */
 .tab 
 {
    display: none;
@@ -56,11 +60,14 @@ input.invalid
 .container-btns 
 {
    overflow:auto;
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
 }
 
 .btns 
 {
-   float:right;
+   /* float:right; */
 }
 
 button 
@@ -84,11 +91,10 @@ button:hover
    background-color: #bbbbbb;
 }
 
-/* Make circles that indicate the steps of the form: */
 .circles 
 {
    text-align:center;
-   margin-top:40px;
+   margin:30px 0 5px;
 }
 
 .step 
@@ -103,13 +109,11 @@ button:hover
    opacity: 0.5;
 }
 
- /* Mark the active step: */
 .step.active 
 {
    opacity: 1;
 }
 
-/* Mark the steps that are finished and valid: */
 .step.finish 
 {
    background-color: #04AA6D;
