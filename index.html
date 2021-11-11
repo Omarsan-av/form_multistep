@@ -17,8 +17,8 @@
          
          <div class="tab">
             <div class="title">
-               <h1>Información de Contacto</h1>
-               <img src="https://img.icons8.com/office/40/000000/user.png"/>
+               <h1>Datos personales <br> del vendedor</h1>
+               <img class = "emoji" src="https://img.icons8.com/office/40/000000/user.png"/>
             </div>
 
             <div class="fields">
@@ -31,68 +31,109 @@
                <p><label for="email">Correo Electrónico</label><input id="email" oninput="this.className = ''"></p>
             </div>
          </div>
-                  
+
          <div class="tab">
             <div class="title">
-               <h1>Datos de la Propiedad</h1>
-               <img class = "home" src="https://img.icons8.com/dusk/64/000000/home.png"/>
+               <h1>Información de la <br> propiedad a la venta</h1>
+               <img class = "emoji" src="https://img.icons8.com/dusk/64/000000/home.png"/>
             </div>
 
             <div class="fields">
                <p>
-                  <label for="type_property">Tipo de Propiedad:</label>
+                  <label for="type_property">Tipo:</label>
                   <select name="type_property" id="">
                      <option value="home">Casa</option>
                      <option value="department">Departamento</option>
                   </select>
                </p>
-   
-               <p><input placeholder="Antigüedad" oninput="this.className = ''"></p>
-   
+
+               <p><label for="size_property">Tamaño del inmueble (m2)</label><input id="size_property" oninput="this.className = ''"></p>
+               <p><label for="antiquity">Antigüedad</label><input id="antiquity" oninput="this.className = ''"></p>
+               <p>
+                  <label for="sale">Venta</label>
+                  <select name="sale" id="sale">
+                     <option value="inmediate">Inmediata</option>
+                     <option value="next_months">Próximos meses</option>
+                     <option value="undefined">Tiempo indefinido</option>
+                  </select>
+               </p>
+               <p><label for="ubication">Ubicación</label><input id="ubication" oninput="this.className = ''"></p>
+            </div>
+         </div>
+                  
+         <div class="tab">
+            <div class="title">
+               <h1>Amenidades de la Propiedad</h1>
+               <img class = "emoji" src="https://img.icons8.com/dusk/64/000000/home.png"/>
+            </div>
+
+            <div class="fields">   
                <label>Cuenta con:</label>
 
-               <div class="check">
+               <div class="check" >
                   <p>
-                     <input type="checkbox" id="elevator" >
                      <label for="elevator">Elevador</label>
+                     <img src="https://img.icons8.com/office/16/000000/elevator.png"/>
+                     <input type="checkbox" id="elevator" >
                   </p>
                   <p>
-                     <input type="checkbox" id="gym" >
                      <label for="gym">Gym</label>
+                     <img src="https://img.icons8.com/external-becris-lineal-color-becris/64/000000/external-gym-hotel-service-becris-lineal-color-becris.png"/>
+                     <input type="checkbox" id="gym" >
                   </p>
                   <p>
-                     <input type="checkbox" id="swimming pool" >
                      <label for="swimming pool">Alberca</label>
+                     <img src="https://img.icons8.com/cute-clipart/64/000000/outdoor-swimming-pool.png"/>
+                     <input type="checkbox" id="swimming pool" >
                   </p>
                   <p>
-                     <input type="checkbox" id="garden" >
+                     <label for="garage">Estacionamiento</label>
+                     <img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-garage-automobile-kiranshastry-lineal-color-kiranshastry.png"/>
+                     <input type="checkbox" id="garage" >
+                  </p>
+
+                  <p>
                      <label for="garden">Jardin</label>
+                     <img src="https://img.icons8.com/emoji/48/000000/sunflower-emoji.png"/>
+                     <input type="checkbox" id="garden" >
+                  </p>
+                  <p>
+                     <label for="other">Otro</label>
+                     <input type="checkbox" id="other" >
                   </p>
                </div>
    
-               <p><input placeholder="Tamaño del inmueble (m2)" oninput="this.className = ''"></p>
             </div>
          </div>
          
          <div class="tab">
-
             <div class="title">
-               <h1>Detalles de la Propiedad</h1>
-               <img src="https://img.icons8.com/office/40/000000/user.png"/>
+               <h1>Detalles de la propiedad</h1>
+               <img class="emoji" src="https://img.icons8.com/dusk/64/000000/home.png"/>
             </div>
 
-            <p><input type="number" placeholder="Recamaras" oninput="this.className = ''"></p>
-            <p><input type="number" placeholder="Baños" oninput="this.className = ''"></p>
-            <p><input type="number" placeholder="Estacionamiento" oninput="this.className = ''"></p>
+            <div class="fields">
+               <p><label for="rooms">Habitaciones</label><input id="rooms" type="number" oninput="this.className = ''"></p>
+               <p><label for="bedrooms">Recamaras</label><input id="bedrooms" type="number" oninput="this.className = ''"></p>
+               <p><label for="bathrooms">Baños</label><input id="bathrooms"type="number" oninput="this.className = ''"></p>
+            </div>
          </div>
 
          <div class="tab">
-
             <div class="title">
                <h1>Fotos de la Propiedad</h1>
-               <img src="https://img.icons8.com/office/40/000000/user.png"/>
+               <img class="emoji" src="https://img.icons8.com/color/48/000000/old-time-camera.png"/>
             </div>
-            <p><input type="file" name="image_property"></p>
+
+            <div class="photo">
+               <label class="photo_label" for="photo_property">Comparte fotos de la propiedad.</label>
+               <p><input class="photo_input" type="file" id="photo_property" name="image_property" multiple></p>
+            </div>
+
+            <div class="check">
+               <p><label for="terms_of_service">Acepto las <a href="">condiciones de servicio</a></label><input type="checkbox" name="terms_of_service" id="terms_of_service">
+               <p><label for="politics">Acepto las <a href="">politicas de privacidad</a></label><input type="checkbox" name="politics" id="politics">
+            </div>
          </div>
          
          <div class="container-btns">

@@ -11,6 +11,7 @@ body
    box-sizing: border-box;
    width: 100%;
    height: auto;
+   min-height: 100vh;
    display: grid;
    place-items: center;
    font-family: 'Roboto', sans-serif;
@@ -29,10 +30,11 @@ body
 
 .fields
 {
-   border: 2px solid #c3c3c3;
+   border: 2px solid #ccc;
    border-radius: 20px;
    padding: 20px 30px 20px;
    margin-top: 20px;
+   min-height: 52vh;
    /* background: rgb(255 255 255 / 60%); */
 }
 
@@ -55,19 +57,22 @@ select
    box-sizing: content-box;
    font-size: 17px;
    font-family: 'Roboto', sans-serif;
+   margin-top: 8px;
 }
 
 label 
 {
    display: block;
    text-align: initial;
+   margin-bottom: 5px;
 }
 
 .check > p 
 {
    display: flex;
    justify-content: start;
-   align-items: center;
+   align-items: baseline;
+   flex-direction: row-reverse;
 }
 
 .check input 
@@ -80,9 +85,31 @@ label
    margin-left: 10px
 }
 
-.home 
+.check img 
 {
-   height: 40px;
+   margin-left: 15px;
+   width: 20px;
+}
+
+.photo 
+{
+   min-height: 50vh;
+}
+
+.photo_label
+{
+   margin-top: 40px;
+   margin-left: 12px;
+}
+
+.photo_input 
+{
+   border: 0;
+}
+
+.emoji
+{
+   height: 50px;
 }
 
 input 
@@ -158,5 +185,5 @@ button:hover
 
 .step.finish 
 {
-   background-color: #04AA6D;
+   background-color: #664efc;
 }
