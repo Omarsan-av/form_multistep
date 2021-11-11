@@ -1,3 +1,12 @@
+:root 
+{
+   --primaryColor: #664efc;
+   --secondaryColor: #a7a4a8;
+   --warning: #ffdddd;
+   --gradient: linear-gradient(130deg, #ecccf7 5%, 10%, #f2f0ea 40%);
+   --borderColor: #bbb;
+}   
+
 * 
 {
    box-sizing: border-box;
@@ -5,15 +14,26 @@
    padding: 0;
 }
 
+html
+{
+   font-size: 6.25%;
+}
+
 body 
 {
-   background: linear-gradient(130deg, #ecccf7 5%, 10%, #f2f0ea 40%);
+   background: var(--gradient);
    box-sizing: border-box;
    width: 100%;
    height: auto;
    min-height: 100vh;
    display: grid;
    place-items: center;
+   font-family: 'Roboto', sans-serif;
+}
+
+p, label, select, input, button
+{
+   font-size: 20rem;
    font-family: 'Roboto', sans-serif;
 }
 
@@ -24,25 +44,30 @@ body
    min-height: 85vh;
    width: 85%;
    min-width: 300px;
-   /* border-radius: 20px; */
    text-align: center;
 }
 
 .fields
 {
-   border: 2px solid #ccc;
+   border: 2px solid var(--borderColor);
    border-radius: 20px;
    padding: 20px 30px 20px;
    margin-top: 20px;
    min-height: 52vh;
-   /* background: rgb(255 255 255 / 60%); */
 }
 
 h1 
 {
    text-align: center;  
-   font-size: 28px;
+   font-size: 28rem;
    margin: 30px 0 20px;
+}
+
+.subtitle 
+{
+   text-align: start;
+   margin-bottom: 25px;
+   font-weight: bold;
 }
 
 p 
@@ -55,8 +80,6 @@ select
    height: 42px;
    width: 98%;
    box-sizing: content-box;
-   font-size: 17px;
-   font-family: 'Roboto', sans-serif;
 }
 
 label 
@@ -77,6 +100,12 @@ label
 .check input 
 {
    width: auto;
+}
+
+.check a
+{
+   font-weight: bold;
+   text-decoration: none;
 }
 
 .check label 
@@ -109,14 +138,12 @@ input
 {
    padding: 10px;
    width: 100%;
-   font-size: 17px;
-   font-family: 'Roboto', sans-serif;
-   border: 1px solid #aaaaaa;
+   border: 1px solid var(--borderColor);
 }
 
 input.invalid 
 {
-   background-color: #ffdddd;
+   background-color: var(--warning);
 }
 
 .tab 
@@ -132,14 +159,19 @@ input.invalid
    margin-top: 30px;
 }
 
+.btns
+{
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+}
+
 button 
 {
-   background-color: #664efc;
-   color: #ffffff;
+   background-color: var(--primaryColor);
+   color: white;
    border: none;
    padding: 10px 20px;
-   font-size: 17px;
-   font-family: Raleway;
    cursor: pointer;
 }
 
@@ -150,7 +182,7 @@ button:hover
 
 #prevBtn 
 {
-   background-color: #bbbbbb;
+   background-color: var(--secondaryColor);
 }
 
 .circles 
@@ -164,7 +196,7 @@ button:hover
    height: 15px;
    width: 15px;
    margin: 0 2px;
-   background-color: #bbbbbb;
+   background-color: var(--borderColor);
    border: none;
    border-radius: 50%;
    display: inline-block;
@@ -178,5 +210,5 @@ button:hover
 
 .step.finish 
 {
-   background-color: #664efc;
+   background-color: var(--primaryColor);
 }
