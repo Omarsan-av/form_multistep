@@ -38,36 +38,40 @@
                <img class = "home" src="https://img.icons8.com/dusk/64/000000/home.png"/>
             </div>
 
-            <p>
-               <label for="type_property">Tipo de Propiedad:</label>
-               <select name="type_property" id="">
-                  <option value="home">Casa</option>
-                  <option value="department">Departamento</option>
-               </select>
-            </p>
+            <div class="fields">
+               <p>
+                  <label for="type_property">Tipo de Propiedad:</label>
+                  <select name="type_property" id="">
+                     <option value="home">Casa</option>
+                     <option value="department">Departamento</option>
+                  </select>
+               </p>
+   
+               <p><input placeholder="Antigüedad" oninput="this.className = ''"></p>
+   
+               <label>Cuenta con:</label>
 
-            <p><input placeholder="Antigüedad" oninput="this.className = ''"></p>
-
-            <label>Cuenta con:</label>
-            <p>
-               <input type="checkbox" id="elevator" >
-               <label for="elevator">Elevador</label>
-            </p>
-            <p>
-               <input type="checkbox" id="gym" >
-               <label for="gym">Gym</label>
-            </p>
-            <p>
-               <input type="checkbox" id="swimming pool" >
-               <label for="swimming pool">Alberca</label>
-            </p>
-            <p>
-               <input type="checkbox" id="garden" >
-               <label for="garden">Jardin</label>
-            </p>
-
-            <p><input placeholder="Tamaño del inmueble (m2)" oninput="this.className = ''"></p>
-
+               <div class="check">
+                  <p>
+                     <input type="checkbox" id="elevator" >
+                     <label for="elevator">Elevador</label>
+                  </p>
+                  <p>
+                     <input type="checkbox" id="gym" >
+                     <label for="gym">Gym</label>
+                  </p>
+                  <p>
+                     <input type="checkbox" id="swimming pool" >
+                     <label for="swimming pool">Alberca</label>
+                  </p>
+                  <p>
+                     <input type="checkbox" id="garden" >
+                     <label for="garden">Jardin</label>
+                  </p>
+               </div>
+   
+               <p><input placeholder="Tamaño del inmueble (m2)" oninput="this.className = ''"></p>
+            </div>
          </div>
          
          <div class="tab">
