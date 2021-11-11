@@ -3,16 +3,16 @@
    --primaryColor: #664efc;
    --secondaryColor: #a7a4a8;
    --warning: #ffdddd;
-   --gradient: linear-gradient(130deg, #ecccf7 7%, 14%, #f2f0ea 40%);
+   --gradient: linear-gradient(130deg, #ecccf7 5%, 10%, #f2f0ea 40%);
    --borderColor: #bbb;
    --shadow: 0px 0px 8px 0px rgb(144 133 133 / 80%);
 }   
 
 * 
 {
-   box-sizing: border-box;
    margin: 0;
    padding: 0;
+   box-sizing: border-box;
 }
 
 html
@@ -22,14 +22,14 @@ html
 
 body 
 {
-   background: var(--gradient);
-   box-sizing: border-box;
+   display: grid;
+   place-items: center;
    width: 100%;
    height: auto;
    min-height: 100vh;
-   display: grid;
-   place-items: center;
+   box-sizing: border-box;
    font-family: 'Roboto', sans-serif;
+   background: var(--gradient);
 }
 
 p, label, select, input, button
@@ -40,12 +40,12 @@ p, label, select, input, button
 
 #register
 {
-   margin: 0 0 25px;
-   height: auto;
-   min-height: 85vh;
+   text-align: center;
    width: 85%;
    min-width: 300px;
-   text-align: center;
+   height: auto;
+   min-height: 85vh;
+   margin: 0 0 25px;
 }
 
 .tab 
@@ -56,8 +56,8 @@ p, label, select, input, button
 h1 
 {
    text-align: center;  
-   font-size: 28rem;
    margin: 30px 0 20px;
+   font-size: 28rem;
    letter-spacing: 0.8px;
 }
 
@@ -68,11 +68,11 @@ h1
 
 .fields
 {
+   min-height: 52vh;
+   margin-top: 20px;
+   padding: 20px 30px 20px;
    border-radius: 20px;
    box-shadow: var(--shadow);
-   padding: 20px 30px 20px;
-   margin-top: 20px;
-   min-height: 52vh;
 }
 
 .group
@@ -83,8 +83,8 @@ h1
 
 input 
 {
-   padding: 10px;
    width: 100%;
+   padding: 10px;
    border: none;
    border-bottom: 1px solid var(--borderColor);
    color: #4945459c;
@@ -93,8 +93,8 @@ input
 
 input:focus
 {
-   outline: none;
    color: #5b5d5d;
+   outline: none;
 }
 
 input:focus~label, input:valid~label
@@ -119,14 +119,14 @@ input.invalid
 
 .line::before
 {
-   content: "";
-   height: 3px;
-   width: 0%;
-   bottom: 0;
    position: absolute;
-   background: linear-gradient(130deg, #d397d8 12%, 45%, #ecccf7 100%);
-   transition: 0.3s ease width;
+   bottom: 0;
    left: 0;
+   transition: 0.3s ease width;
+   width: 0%;
+   height: 3px;
+   background: linear-gradient(130deg, #d397d8 12%, 45%, #ecccf7 100%);
+   content: "";
 }
 
 input:focus~.line::before
@@ -137,13 +137,13 @@ input:focus~.line::before
 
 label 
 {
-   display: block;
-   font-weight: 400;
-   color: #4945459c;
    position: absolute;
    top: 10px;
    left: 5px;
+   display: block;
    transition: 0.5s;
+   font-weight: 400;
+   color: #4945459c;
    pointer-events: none;
 }
 
@@ -161,8 +161,8 @@ p
 
 select
 {
-   height: 42px;
    width: 98%;
+   height: 42px;
    box-sizing: content-box;
 }
 
@@ -188,8 +188,8 @@ select
 
 .check label
 {
-   margin-left: 20px;
    position: static;
+   margin-left: 20px;
 }
 
 .check input 
@@ -219,9 +219,9 @@ input[type=checkbox]
 
 .photo_label
 {
+   position: static;
    margin-top: 40px;
    margin-left: 12px;
-   position: static;
 }
 
 .photo_input 
@@ -232,25 +232,25 @@ input[type=checkbox]
 
 .container-btns 
 {
-   overflow:auto;
    display: flex;
    justify-content: center;
    margin-top: 30px;
+   overflow:auto;
 }
 
 .btns
 {
-   width: 100%;
    display: flex;
    justify-content: space-evenly;
+   width: 100%;
 }
 
 button 
 {
+   padding: 10px 20px;
+   border: none;
    background-color: var(--primaryColor);
    color: white;
-   border: none;
-   padding: 10px 20px;
    cursor: pointer;
 }
 
@@ -272,13 +272,13 @@ button:hover
 
 .step 
 {
-   height: 15px;
+   display: inline-block;
    width: 15px;
+   height: 15px;
    margin: 0 2px;
-   background-color: var(--borderColor);
    border: none;
    border-radius: 50%;
-   display: inline-block;
+   background-color: var(--borderColor);
    opacity: 0.5;
 }
 
