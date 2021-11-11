@@ -7,7 +7,7 @@
 
 body 
 {
-   background: linear-gradient(120deg, #ecccf7 5%, 10%, #f2f0ea 40%);
+   background: linear-gradient(130deg, #ecccf7 5%, 10%, #f2f0ea 40%);
    box-sizing: border-box;
    width: 100%;
    height: auto;
@@ -18,22 +18,29 @@ body
 
 #register
 {
-   background-color: rgb(255 255 255 / 62%);
-   padding: 20px 30px 20px;
    margin: 0 0 25px;
    height: auto;
    min-height: 85vh;
    width: 85%;
    min-width: 300px;
-   border-radius: 20px;
+   /* border-radius: 20px; */
    text-align: center;
+}
+
+.fields
+{
+   /* border: 2px solid #c3c3c3; */
+   border-radius: 20px;
+   padding: 20px 30px 20px;
+   margin-top: 20px;
+   background: rgb(255 255 255 / 62%);
 }
 
 h1 
 {
    text-align: center;  
    font-size: 28px;
-   margin: 30px 0 40px;
+   margin: 30px 0 20px;
 }
 
 p 
@@ -67,7 +74,7 @@ input
    padding: 10px;
    width: 100%;
    font-size: 17px;
-   font-family: Raleway;
+   font-family: 'Roboto', sans-serif;
    border: 1px solid #aaaaaa;
 }
 

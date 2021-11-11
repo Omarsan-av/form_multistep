@@ -12,23 +12,31 @@
    </head>
    <body>
 
-      <h1 id = "title">Información de Contacto</h1>
-
+      
       <form id="register" action="">
          
          <div class="tab">
-            <img src="https://img.icons8.com/office/40/000000/user.png"/>
-            <p><input placeholder="Nombre" pattern="[A-Za-z]" oninput="this.className = ''"></p>
-            <p><input placeholder="Apellido Paterno" oninput="this.className = ''"></p>
-            <p><input placeholder="Apellido Materno" oninput="this.className = ''"></p>
-            <p><input placeholder="Dirección" oninput="this.className = ''"></p>
-            <p><input placeholder="Código Postal" oninput="this.className = ''"></p>
-            <p><input placeholder="Número Telefónico" oninput="this.className = ''"></p>
-            <p><input placeholder="Correo Electrónico" oninput="this.className = ''"></p>
+            <div class="title">
+               <h1>Información de Contacto</h1>
+               <img src="https://img.icons8.com/office/40/000000/user.png"/>
+            </div>
+
+            <div class="fields">
+               <p><label for="name">Nombre</label><input id = "name" pattern="[A-Za-z]" oninput="this.className = ''"></p>
+               <p><label for="paternal">Apellido Paterno</label><input id="paternal" oninput="this.className = ''"></p>
+               <p><label for="maternal">Apellido Materno</label><input id="maternal" oninput="this.className = ''"></p>
+               <p><label for="address">Dirección</label><input id="address" oninput="this.className = ''"></p>
+               <p><label for="cp">Código Postal</label><input id="cp" oninput="this.className = ''"></p>
+               <p><label for="phone">Número Telefónico</label><input id="phone" oninput="this.className = ''"></p>
+               <p><label for="email">Correo Electrónico</label><input id="email" oninput="this.className = ''"></p>
+            </div>
          </div>
                   
          <div class="tab">
-            <img class = "home" src="https://img.icons8.com/dusk/64/000000/home.png"/>
+            <div class="title">
+               <h1>Datos de la Propiedad</h1>
+               <img class = "home" src="https://img.icons8.com/dusk/64/000000/home.png"/>
+            </div>
 
             <p>
                <label for="type_property">Tipo de Propiedad:</label>
@@ -40,7 +48,7 @@
 
             <p><input placeholder="Antigüedad" oninput="this.className = ''"></p>
 
-            <p>Cuenta con:</p>
+            <label>Cuenta con:</label>
             <p>
                <input type="checkbox" id="elevator" >
                <label for="elevator">Elevador</label>
@@ -63,12 +71,23 @@
          </div>
          
          <div class="tab">
+
+            <div class="title">
+               <h1>Detalles de la Propiedad</h1>
+               <img src="https://img.icons8.com/office/40/000000/user.png"/>
+            </div>
+
             <p><input type="number" placeholder="Recamaras" oninput="this.className = ''"></p>
             <p><input type="number" placeholder="Baños" oninput="this.className = ''"></p>
             <p><input type="number" placeholder="Estacionamiento" oninput="this.className = ''"></p>
          </div>
 
          <div class="tab">
+
+            <div class="title">
+               <h1>Fotos de la Propiedad</h1>
+               <img src="https://img.icons8.com/office/40/000000/user.png"/>
+            </div>
             <p><input type="file" name="image_property"></p>
          </div>
          

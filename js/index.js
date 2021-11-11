@@ -16,26 +16,6 @@ function showTab(n)
    {
       document.getElementById("prevBtn").style.display = "inline";
    }
-
-   if(n == 1)
-   {
-      title.innerHTML = "Especificaciones <br> de la propiedad";
-   }
-
-   if(n == 2)
-   {
-      title.innerHTML = "Detalles de la propiedad";
-   }
-
-   if(n == 3)
-   {
-      title.innerHTML = "Fotos de la propiedad";
-   }
-
-   if(n == 4)
-   {
-      title.innerHTML = "Términos y Condiciones";
-   }
    
    if (n == (x.length - 1)) 
    {
