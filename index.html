@@ -12,7 +12,6 @@
    </head>
    <body>
 
-      
       <form id="register" action="">
          
          <div class="tab">
@@ -22,13 +21,40 @@
             </div>
 
             <div class="fields">
-               <p><label for="name">Nombre</label><input id = "name" pattern="[A-Za-z]" oninput="this.className = ''"></p>
-               <p><label for="paternal">Apellido Paterno</label><input id="paternal" oninput="this.className = ''"></p>
-               <p><label for="maternal">Apellido Materno</label><input id="maternal" oninput="this.className = ''"></p>
-               <p><label for="address">Dirección</label><input id="address" oninput="this.className = ''"></p>
-               <p><label for="cp">Código Postal</label><input id="cp" oninput="this.className = ''"></p>
-               <p><label for="phone">Número Telefónico</label><input id="phone" oninput="this.className = ''"></p>
-               <p><label for="email">Correo Electrónico</label><input id="email" oninput="this.className = ''"></p>
+               <div class="group">
+                  <input id ="name" required oninput="this.className = ''"><span class="line"></span>
+                  <label for="name">Nombre</label>
+               </div>
+
+               <div class="group">
+                  <input id ="paternal" required oninput="this.className = ''"><span class="line"></span>
+                  <label for="paternal">Apellido Paterno</label>
+               </div>
+
+               <div class="group">
+                  <input id ="maternal" required oninput="this.className = ''"><span class="line"></span>
+                  <label for="maternal">Apellido Materno</label>
+               </div>
+
+               <div class="group">
+                  <input id ="address" required oninput="this.className = ''"><span class="line"></span>
+                  <label for="address">Dirección</label>
+               </div>
+
+               <div class="group">
+                  <input id ="cp" required oninput="this.className = ''"><span class="line"></span>
+                  <label for="cp">Código Postal</label>
+               </div>
+
+               <div class="group">
+                  <input id ="phone" required oninput="this.className = ''"><span class="line"></span>
+                  <label for="phone">Número Telefónico</label>
+               </div>
+
+               <div class="group">
+                  <input id ="email" required oninput="this.className = ''"><span class="line"></span>
+                  <label for="email">Email</label>
+               </div>
             </div>
          </div>
 
@@ -39,25 +65,39 @@
             </div>
 
             <div class="fields">
-               <p>
-                  <label for="type_property">Tipo:</label>
-                  <select name="type_property" id="">
-                     <option value="home">Casa</option>
-                     <option value="department">Departamento</option>
-                  </select>
-               </p>
-
-               <p><label for="size_property">Tamaño del inmueble (m2)</label><input id="size_property" oninput="this.className = ''"></p>
-               <p><label for="antiquity">Antigüedad</label><input id="antiquity" oninput="this.className = ''"></p>
-               <p>
-                  <label for="sale">Venta</label>
-                  <select name="sale" id="sale">
-                     <option value="inmediate">Inmediata</option>
-                     <option value="next_months">Próximos meses</option>
-                     <option value="undefined">Tiempo indefinido</option>
-                  </select>
-               </p>
-               <p><label for="ubication">Ubicación</label><input id="ubication" oninput="this.className = ''"></p>
+               <div class="sale">
+                  <p>
+                     <label for="type_property">Tipo:</label>
+                     <select name="type_property" id="">
+                        <option value="home">Casa</option>
+                        <option value="department">Departamento</option>
+                     </select>
+                  </p>
+   
+                  <div class="group">
+                     <label for="size_property">Tamaño del inmueble (m2)</label>
+                     <input id ="size_property" required oninput="this.className = ''"><span class="line"></span>
+                  </div>
+   
+                  <div class="group">
+                     <label for="antiquity">Antigüedad</label>
+                     <input id ="antiquity" required oninput="this.className = ''"><span class="line"></span>
+                  </div>
+   
+                  <p>
+                     <label for="sale">Venta</label>
+                     <select name="sale" id="sale">
+                        <option value="inmediate">Inmediata</option>
+                        <option value="next_months">Próximos meses</option>
+                        <option value="undefined">Tiempo indefinido</option>
+                     </select>
+                  </p>
+   
+                  <div class="group">
+                     <label for="ubication">Ubicación</label>
+                     <input id ="ubication" required oninput="this.className = ''"><span class="line"></span>
+                  </div>
+               </div>
             </div>
          </div>
                   
@@ -97,7 +137,6 @@
                      <input type="checkbox" id="other" >
                   </p>
                </div>
-   
             </div>
          </div>
          
@@ -108,9 +147,20 @@
             </div>
 
             <div class="fields">
-               <p><label for="rooms">Habitaciones</label><input id="rooms" type="number" oninput="this.className = ''"></p>
-               <p><label for="bedrooms">Recamaras</label><input id="bedrooms" type="number" oninput="this.className = ''"></p>
-               <p><label for="bathrooms">Baños</label><input id="bathrooms"type="number" oninput="this.className = ''"></p>
+               <div class="group">
+                  <input id ="rooms" type="number" required oninput="this.className = ''"><span class="line"></span>
+                  <label for="rooms">Habitaciones</label>
+               </div>
+
+               <div class="group">
+                  <input id ="bedrooms" type="number" required oninput="this.className = ''"><span class="line"></span>
+                  <label for="bedrooms">Recamaras</label>
+               </div>
+
+               <div class="group">
+                  <input id ="bathrooms" type="number" required oninput="this.className = ''"><span class="line"></span>
+                  <label for="bathrooms">Baños</label>
+               </div>
             </div>
          </div>
 
