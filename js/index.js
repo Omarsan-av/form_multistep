@@ -1,6 +1,8 @@
 let currentTab = 0; 
 showTab(currentTab); 
 
+let title = document.getElementById("title");
+
 function showTab(n) 
 {
    let x = document.getElementsByClassName("tab");
@@ -13,6 +15,26 @@ function showTab(n)
    else 
    {
       document.getElementById("prevBtn").style.display = "inline";
+   }
+
+   if(n == 1)
+   {
+      title.innerHTML = "Especificaciones <br> de la propiedad";
+   }
+
+   if(n == 2)
+   {
+      title.innerHTML = "Detalles de la propiedad";
+   }
+
+   if(n == 3)
+   {
+      title.innerHTML = "Fotos de la propiedad";
+   }
+
+   if(n == 4)
+   {
+      title.innerHTML = "Términos y Condiciones";
    }
    
    if (n == (x.length - 1)) 
@@ -56,7 +78,7 @@ function nextPrev(n)
 function validateForm()  
 {
    // This function deals with validation of the form fields
-   var x, y, i, valid = true;
+   let x, y, i, valid = true;
    x = document.getElementsByClassName("tab");
    y = x[currentTab].getElementsByTagName("input");
 
@@ -77,6 +99,7 @@ function validateForm()
    if (valid) 
    {
       document.getElementsByClassName("step")[currentTab].className += " finish";
+
    }
    return valid; // return the valid status
 }
