@@ -2,7 +2,7 @@
 {
    --primaryColor: #664efc;
    --secondaryColor: #a7a4a8;
-   --warning: #ea7777;
+   --warning: #eb7a7a;
    --gradient: linear-gradient(130deg, #ecccf7 5%, 10%, #f2f0ea 40%);
    --borderColor: #bbb;
 }   
@@ -144,7 +144,7 @@ input
 
 input.invalid 
 {
-   border: 2px solid var(--warning);
+   background-color:  var(--invalid);
 }
 
 .tab 
