@@ -7,7 +7,7 @@
 
 body 
 {
-   background-color: #f1f1f1;
+   background: linear-gradient(120deg, #ecccf7 5%, 10%, #f2f0ea 40%);
    box-sizing: border-box;
    width: 100%;
    height: 100%;
@@ -18,7 +18,7 @@ body
 
 #register
 {
-   background-color: #ffffff;
+   background-color: rgb(255 255 255 / 62%);
    padding: 30px 30px 20px;
    margin: 25px 0;
    height: auto;
@@ -30,7 +30,7 @@ body
 h1 
 {
    text-align: center;  
-   font-size: 27px;
+   font-size: 28px;
    margin-top: 30px;
 }
 
@@ -73,7 +73,7 @@ input.invalid
 
 button 
 {
-   background-color: #04AA6D;
+   background-color: #664efc;
    color: #ffffff;
    border: none;
    padding: 10px 20px;
