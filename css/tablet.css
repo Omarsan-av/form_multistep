@@ -1,0 +1,40 @@
+p,
+label,
+select,
+input,
+button 
+{
+  font-size: 19rem;
+}
+
+#register 
+{
+  width: 55%;
+}
+
+h1 
+{
+  margin-top: 50px;
+  font-size: 32px;
+}
+
+br 
+{
+  display: none;
+}
+
+.emoji 
+{
+  height: 60px;
+}
+
+input:focus ~ label,
+input:valid ~ label 
+{
+  font-size: 17rem;
+}
+
+.photo_label 
+{
+  text-align: left;
+}

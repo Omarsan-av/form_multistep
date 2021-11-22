@@ -1,0 +1,19 @@
+#register 
+{
+   width: 40%;
+}
+ 
+p,
+label,
+select,
+input,
+button 
+{
+   font-size: 17rem;
+}
+ 
+.photo 
+{
+   min-height: 29vh;
+   margin-top: 100px;
+}
