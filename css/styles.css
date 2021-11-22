@@ -6,20 +6,20 @@
    --gradient: linear-gradient(130deg, #ecccf7 5%, 10%, #f2f0ea 40%);
    --borderColor: #bbb;
    --shadow: 0px 0px 8px 0px rgb(144 133 133 / 80%);
-}   
-
+}
+ 
 * 
 {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
-
-html
+ 
+html 
 {
    font-size: 6.25%;
 }
-
+ 
 body 
 {
    display: grid;
@@ -28,17 +28,21 @@ body
    height: auto;
    min-height: 100vh;
    box-sizing: border-box;
-   font-family: 'Roboto', sans-serif;
+   font-family: "Roboto", sans-serif;
    background: var(--gradient);
 }
-
-p, label, select, input, button
+ 
+p,
+label,
+select,
+input,
+button 
 {
    font-size: 18rem;
-   font-family: 'Roboto', sans-serif;
+   font-family: "Roboto", sans-serif;
 }
-
-#register
+ 
+#register 
 {
    text-align: center;
    width: 85%;
@@ -47,26 +51,26 @@ p, label, select, input, button
    min-height: 85vh;
    margin: 0 0 25px;
 }
-
+ 
 .tab 
 {
    display: none;
 }
-
+ 
 h1 
 {
-   text-align: center;  
+   text-align: center;
    margin: 30px 0 20px;
    font-size: 28rem;
    letter-spacing: 0.8px;
 }
-
-.emoji
+ 
+.emoji 
 {
    height: 50px;
 }
-
-.fields
+ 
+.fields 
 {
    min-height: 52vh;
    margin-top: 20px;
@@ -74,13 +78,13 @@ h1
    border-radius: 20px;
    box-shadow: var(--shadow);
 }
-
-.group
+ 
+.group 
 {
    position: relative;
    margin: 40px 0;
 }
-
+ 
 input 
 {
    width: 100%;
@@ -90,34 +94,35 @@ input
    color: #4945459c;
    box-shadow: var(--shadow);
 }
-
-input:focus
+ 
+input:focus 
 {
    color: #5b5d5d;
    outline: none;
 }
-
-input:focus~label, input:valid~label
+ 
+input:focus ~ label,
+input:valid ~ label 
 {
    top: -25px;
    font-size: 12rem;
    color: black;
    box-shadow: none;
 }
-
+ 
 input.invalid 
 {
-   background-color:  var(--warning);
+   background-color: var(--warning);
 }
-
+ 
 .line 
 {
    position: relative;
    display: block;
    width: 100%;
 }
-
-.line::before
+ 
+.line::before 
 {
    position: absolute;
    bottom: 0;
@@ -128,13 +133,12 @@ input.invalid
    background: linear-gradient(130deg, #d397d8 12%, 45%, #ecccf7 100%);
    content: "";
 }
-
-input:focus~.line::before
+ 
+input:focus ~ .line::before 
 {
    width: 100%;
 }
-
-
+ 
 label 
 {
    position: absolute;
@@ -146,38 +150,42 @@ label
    color: #4945459c;
    pointer-events: none;
 }
-
-.sale label
+ 
+.sale label 
 {
    position: static;
    text-align: start;
    margin-bottom: 8px;
 }
-
+ 
 p 
 {
    margin: 16px 0;
 }
-
-select
+ 
+select 
 {
    width: 98%;
    height: 42px;
-   box-sizing: content-box;
+   box-sizing: border-box;
+   padding: 0 10px;
+   border: none;
+   box-shadow: var(--shadow);
+   background: white;
 }
-
+ 
 .subtitle 
 {
    text-align: start;
    margin-bottom: 25px;
    font-weight: bold;
 }
-
+ 
 .check 
 {
    height: 100px;
 }
-
+ 
 .check > p 
 {
    display: flex;
@@ -185,91 +193,93 @@ select
    align-items: baseline;
    flex-direction: row-reverse;
 }
-
-.check label
+ 
+.check label 
 {
    position: static;
    margin-left: 20px;
 }
-
+ 
 .check input 
 {
    width: auto;
 }
-
-.check a
+ 
+.check a 
 {
    font-weight: bold;
    text-decoration: none;
    color: var(--primaryColor);
 }
-
-input[type=checkbox] 
+ 
+input[type="checkbox"] 
 {
    transform: scale(2);
    -ms-transform: scale(2);
    -webkit-transform: scale(2);
    padding: 10px;
 }
-
+ 
 .photo 
 {
    min-height: 35vh;
 }
-
-.photo_label
+ 
+.photo_label 
 {
    position: static;
    margin-top: 40px;
    margin-left: 12px;
+   text-align: start;
 }
-
+ 
 .photo_input 
 {
    border: 0;
    box-shadow: none;
 }
-
+ 
 .container-btns 
 {
    display: flex;
    justify-content: center;
    margin-top: 30px;
-   overflow:auto;
+   overflow: auto;
 }
-
-.btns
+ 
+.btns 
 {
    display: flex;
    justify-content: space-evenly;
    width: 100%;
 }
-
+ 
 button 
 {
+   width: 113px;
    padding: 10px 20px;
    border: none;
    background-color: var(--primaryColor);
    color: white;
    cursor: pointer;
 }
-
+ 
 button:hover 
 {
    opacity: 0.8;
 }
-
+ 
 #prevBtn 
 {
    background-color: var(--secondaryColor);
 }
-
+ 
 .circles 
 {
-   text-align:center;
-   margin:30px 0 5px;
+   text-align: center;
+   margin: 30px 0 5px;
 }
-
+ 
 .step 
 {
    display: inline-block;
@@ -281,14 +291,13 @@ button:hover
    background-color: var(--borderColor);
    opacity: 0.5;
 }
-
+ 
 .step.active 
 {
    opacity: 1;
 }
-
+ 
 .step.finish 
 {
    background-color: var(--primaryColor);
 }
-

@@ -1,58 +1,59 @@
 <!DOCTYPE html>
-   <html lang="es">
+<html lang="es">
    <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">      
-      <link rel="stylesheet" href="css/styles.css">
+      <meta charset="UTF-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Formulario multiple</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet"/>
+      <link rel="stylesheet" href="css/styles.css"/>
+      <link rel="stylesheet" href="css/tablet.css" media="(min-width: 768px)"/>
+      <link rel="stylesheet" href="css/desktop.css" media="(min-width: 1024px)"/>
    </head>
+   
    <body>
-
       <form id="register" action="">
-         
          <div class="tab">
             <div class="title">
-               <h1>Datos personales <br> del vendedor</h1>
-               <img class = "emoji" src="https://img.icons8.com/office/40/000000/user.png"/>
+               <h1>Datos personales <br/> del vendedor</h1>
+               <img class="emoji" src="https://img.icons8.com/office/40/000000/user.png"/>
             </div>
 
             <div class="fields">
                <div class="group">
-                  <input id ="name" required oninput="this.className = ''"><span class="line"></span>
+                  <input id="name" required oninput="this.className = ''" /><span class="line"></span>
                   <label for="name">Nombre</label>
                </div>
 
                <div class="group">
-                  <input id ="paternal" required oninput="this.className = ''"><span class="line"></span>
+                  <input id="paternal" required oninput="this.className = ''" /><span class="line"></span>
                   <label for="paternal">Apellido Paterno</label>
                </div>
 
                <div class="group">
-                  <input id ="maternal" required oninput="this.className = ''"><span class="line"></span>
+                  <input id="maternal" required oninput="this.className = ''" /><span class="line"></span>
                   <label for="maternal">Apellido Materno</label>
                </div>
 
                <div class="group">
-                  <input id ="address" required oninput="this.className = ''"><span class="line"></span>
+                  <input id="address" required oninput="this.className = ''" /><span class="line"></span>
                   <label for="address">Dirección</label>
                </div>
 
                <div class="group">
-                  <input id ="cp" required oninput="this.className = ''"><span class="line"></span>
+                  <input id="cp" required oninput="this.className = ''" /><span class="line"></span>
                   <label for="cp">Código Postal</label>
                </div>
 
                <div class="group">
-                  <input id ="phone" required oninput="this.className = ''"><span class="line"></span>
+                  <input id="phone" required oninput="this.className = ''" /><span class="line"></span>
                   <label for="phone">Número Telefónico</label>
                </div>
 
                <div class="group">
-                  <input id ="email" required oninput="this.className = ''"><span class="line"></span>
+                  <input id="email" required oninput="this.className = ''" /><span class="line"></span>
                   <label for="email">Email</label>
                </div>
             </div>
@@ -60,8 +61,8 @@
 
          <div class="tab">
             <div class="title">
-               <h1>Información de la <br> propiedad a la venta</h1>
-               <img class = "emoji" src="https://img.icons8.com/dusk/64/000000/home.png"/>
+               <h1>Información de la <br/>propiedad a la venta</h1>
+               <img class="emoji" src="https://img.icons8.com/dusk/64/000000/home.png"/>
             </div>
 
             <div class="fields">
@@ -73,17 +74,17 @@
                         <option value="department">Departamento</option>
                      </select>
                   </p>
-   
+
                   <div class="group">
                      <label for="size_property">Tamaño del inmueble (m2)</label>
-                     <input id ="size_property" required oninput="this.className = ''"><span class="line"></span>
+                     <input id="size_property" required oninput="this.className = ''"/><span class="line"></span>
                   </div>
-   
+
                   <div class="group">
                      <label for="antiquity">Antigüedad</label>
-                     <input id ="antiquity" required oninput="this.className = ''"><span class="line"></span>
+                     <input id="antiquity" required oninput="this.className = ''"/><span class="line"></span>
                   </div>
-   
+
                   <p>
                      <label for="sale">Venta</label>
                      <select name="sale" id="sale">
@@ -92,54 +93,58 @@
                         <option value="undefined">Tiempo indefinido</option>
                      </select>
                   </p>
-   
+
                   <div class="group">
                      <label for="ubication">Ubicación</label>
-                     <input id ="ubication" required oninput="this.className = ''"><span class="line"></span>
+                     <input id="ubication" required oninput="this.className = ''"/><span class="line"></span>
                   </div>
                </div>
             </div>
          </div>
-                  
+
          <div class="tab">
             <div class="title">
                <h1>Amenidades de la Propiedad</h1>
-               <img class = "emoji" src="https://img.icons8.com/dusk/64/000000/home.png"/>
+               <img class="emoji" src="https://img.icons8.com/dusk/64/000000/home.png"/>
             </div>
 
-            <div class="fields">   
+            <div class="fields">
                <p class="subtitle">Cuenta con:</p>
 
-               <div class="check" >
+               <div class="check">
                   <p>
                      <label for="elevator">Elevador</label>
-                     <input type="checkbox" id="elevator" >
+                     <input type="checkbox" id="elevator" />
                   </p>
+
                   <p>
                      <label for="gym">Gym</label>
-                     <input type="checkbox" id="gym" >
+                     <input type="checkbox" id="gym" />
                   </p>
+
                   <p>
                      <label for="swimming pool">Alberca</label>
-                     <input type="checkbox" id="swimming pool" >
+                     <input type="checkbox" id="swimming pool" />
                   </p>
+                  
                   <p>
                      <label for="garage">Estacionamiento</label>
-                     <input type="checkbox" id="garage" >
+                     <input type="checkbox" id="garage" />
                   </p>
 
                   <p>
                      <label for="garden">Jardin</label>
-                     <input type="checkbox" id="garden" >
+                     <input type="checkbox" id="garden" />
                   </p>
+                  
                   <p>
                      <label for="other">Otro</label>
-                     <input type="checkbox" id="other" >
+                     <input type="checkbox" id="other" />
                   </p>
                </div>
             </div>
          </div>
-         
+
          <div class="tab">
             <div class="title">
                <h1>Detalles de la propiedad</h1>
@@ -148,17 +153,17 @@
 
             <div class="fields">
                <div class="group">
-                  <input id ="rooms" type="number" required oninput="this.className = ''"><span class="line"></span>
+                  <input id="rooms" type="number" required oninput="this.className = ''"/><span class="line"></span>
                   <label for="rooms">Habitaciones</label>
                </div>
 
                <div class="group">
-                  <input id ="bedrooms" type="number" required oninput="this.className = ''"><span class="line"></span>
+                  <input id="bedrooms" type="number" required oninput="this.className = ''"/><span class="line"></span>
                   <label for="bedrooms">Recamaras</label>
                </div>
 
                <div class="group">
-                  <input id ="bathrooms" type="number" required oninput="this.className = ''"><span class="line"></span>
+                  <input id="bathrooms" type="number" required oninput="this.className = ''"/><span class="line"></span>
                   <label for="bathrooms">Baños</label>
                </div>
             </div>
@@ -172,29 +177,37 @@
 
             <div class="photo">
                <label class="photo_label" for="photo_property">Muestra fotos de la propiedad.</label>
-               <p><input class="photo_input" type="file" id="photo_property" name="image_property" multiple></p>
+               <p>
+                  <input class="photo_input" type="file" id="photo_property" name="image_property" multiple/>
+               </p>
             </div>
 
             <div class="check">
-               <p><label for="terms_of_service">Acepto las <a href="">condiciones de servicio</a></label><input type="checkbox" name="terms_of_service" id="terms_of_service">
-               <p><label for="politics">Acepto las <a href="">politicas de privacidad</a></label><input type="checkbox" name="politics" id="politics">
+               <p>
+                  <label for="terms_of_service">Acepto las <a href="">condiciones de servicio</a></label>
+                  <input type="checkbox" name="terms_of_service" id="terms_of_service"/>
+               </p>
+               
+               <p>
+                  <label for="politics">Acepto las <a href="">politicas de privacidad</a></label>
+                  <input type="checkbox" name="politics" id="politics" />
+               </p>
             </div>
          </div>
-         
+
          <div class="container-btns">
             <div class="btns">
                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
                <button type="button" id="nextBtn" onclick="nextPrev(1)">Siguiente</button>
             </div>
          </div>
-         
-         <div class ="circles">
+
+         <div class="circles">
             <span class="step"></span>
             <span class="step"></span>
             <span class="step"></span>
             <span class="step"></span>
          </div>
-         
       </form>
 
       <script src="./js/index.js"></script>
