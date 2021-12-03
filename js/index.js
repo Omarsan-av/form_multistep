@@ -1,7 +1,24 @@
 let currentTab = 0; 
-showTab(currentTab); 
-
 let title = document.getElementById("title");
+let nameUser = document.getElementById("name");
+let paternal = document.getElementById("paternal");
+let maternal = document.getElementById("maternal");
+let address = document.getElementById("address");
+let cp = document.getElementById("cp");
+let phone = document.getElementById("phone");
+let email = document.getElementById('email'); 
+let next = document.getElementById("nextBtn");
+let letters_spaces = document.querySelectorAll('.letters_spaces')
+let letters_spaces_numbers = document.querySelectorAll('.letters_spaces_numbers')
+let numbers = document.querySelectorAll('.numbers');
+let error_email = document.querySelectorAll('.error_email');
+const patron1 = /^[a-zA-Z\s]{1,40}$/;
+const patron2 = /^[a-zA-Z0-9\s#]{3,100}$/;
+const patron3 = /^[0-9]{5}$/;
+const patron4 = /^[0-9]{10}$/;
+const patron5 = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+
+showTab(currentTab); 
 
 function showTab(n) 
 {
@@ -19,11 +36,11 @@ function showTab(n)
    
    if (n == (x.length - 1)) 
    {
-      document.getElementById("nextBtn").innerHTML = "Enviar";
+      next.innerHTML = "Enviar";
    } 
    else 
    {
-      document.getElementById("nextBtn").innerHTML = "Siguiente";
+      next.innerHTML = "Siguiente";
    }
    
    fixStepIndicator(n)
@@ -50,25 +67,94 @@ function nextPrev(n)
 
 function validateForm()  
 {
-   let x, y, i, valid = true;
+   let x, y, valid = true;
    x = document.getElementsByClassName("tab");
    y = x[currentTab].getElementsByTagName("input");
 
-   for (i = 0; i < y.length; i++) 
+   function getAddress()
    {
-      if (y[i].value == "") 
+      if(patron2.test(address.value))
       {
-         y[i].className += " invalid";
+         letters_spaces_numbers[0].style.display = "none";
+      }
+
+      else 
+      {
+         letters_spaces_numbers[0].style.display = "block";
          valid = false;
+         address.classList.add("invalid");
       }
    }
+
+   function onlyNumbers(number, field, nameClass, patron)
+   {
+
+      if(patron.test(field.value) == false )
+      {
+         dateInvalid(number, field, nameClass)
+      }
+
+      else
+      {
+         nameClass[number].style.display = "none";
+      }
+   }
+
+   function getEmail(number, field, nameClass)
+   {
+      if(patron5.test(field.value) == false)
+      {
+         dateInvalid(number, field, nameClass)
+      }
+
+      else
+      {
+         nameClass[number].style.display = "none";
+      }
+   }
+
+   function dateInvalid(number, field, nameClass)
+   {
+      field.classList.add("invalid");
+      valid = false;
+      nameClass[number].style.display = "block";
+   }
+
+   function typeField(field, number, patron, nameClass)
+   {
+      if(field.value.length < 3 || field.value.length > 30)
+      {
+         dateInvalid(number, field, nameClass)
+      }
    
+      else 
+      {
+         if(patron.test(field.value) == false )
+         {
+            dateInvalid(number, field, nameClass)
+         }
+
+         else
+         {
+            nameClass[number].style.display = "none";
+         }
+      }
+   }
+
+   typeField(nameUser, 0, patron1, letters_spaces)
+   typeField(paternal, 1, patron1, letters_spaces)
+   typeField(maternal, 2, patron1, letters_spaces)
+   getAddress()
+   onlyNumbers(0, cp, numbers, patron3)
+   onlyNumbers(1, phone, numbers, patron4)
+   getEmail(0, email, error_email)
+
    if (valid) 
    {
       document.getElementsByClassName("step")[currentTab].className += " finish";
-
    }
    return valid; 
+   
 }
 
 function fixStepIndicator(n) 
